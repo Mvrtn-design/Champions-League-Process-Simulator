@@ -1,0 +1,67 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.32.31332.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/marti/documents/proyecyo de c++/sorteo/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1d30e7fb654f88e5bf57fc4486f7c2d4d621d90afd100a0f4f5094734ab82afb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/marti/documents/proyecyo de c++/sorteo/equipo.h"
+          },
+          "hashes": {
+            "sha-256": "d5e8e42446c6fa58cf69f8d7f95fcac2b5356e143644b70cd42c1ffe65b027a6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/marti/documents/proyecyo de c++/sorteo/almacen.h"
+          },
+          "hashes": {
+            "sha-256": "1c4e9a922d257882b7a14ad1782f08a38c5454ba87f8f8d37aecf7c0263237ee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/marti/documents/proyecyo de c++/sorteo/grupo.h"
+          },
+          "hashes": {
+            "sha-256": "83c62bba90556d57c17ae76affc1f1314712a814ac4ee572b0437b4f1c3f329e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/marti/documents/proyecyo de c++/sorteo/partido.h"
+          },
+          "hashes": {
+            "sha-256": "63a4479afd963cc55aea2749e61e4221fbe97c18e913def8cec7975c3dd25a0e"
+          }
+        }
+      ]
+    }
+  ]
+}

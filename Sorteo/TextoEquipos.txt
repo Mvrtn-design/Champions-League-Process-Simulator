@@ -1,0 +1,39 @@
+Eintrackt Franckfurt , Germany , 5 ,
+
+Real Madrid CF , Spain , 1 ,
+FC Barcelona , Spain , 2 ,
+Atletico de Madrid , Spain , 4 ,
+Sevilla CF , Spain , 3 ,
+
+Liverpool FC , England , 2 ,
+Manchester City , England , 1 ,
+Tottenham Hotspurs , England , 4 ,
+Chelsea CF , England , 3 ,
+
+Bayern Munich , Germany , 1 ,
+Borussia Dortmund , Germany , 2 ,
+Bayern Leverkusen , Germany , 3 ,
+Red Bull Leipzig , Germany , 4 ,
+
+AC Milan , Italy , 1 ,
+Inter de Milan , Italy , 2 ,
+Napoles , Italy , 3 ,
+Juventus de Turin , Italy , 4 ,
+
+Paris Saint Germain , France , 1 ,
+Lille OSC , France , 3 ,
+Olympique de Lyon , France , 2 ,
+
+O Porto , Portugal , 1 ,
+Benfica , Portugal , 2 ,
+
+Shacktar Doneskt , Ukraine , 1 ,
+Galatasaray , Turkey , 1 ,
+Ajax Amsterdam , Netherlands , 1 ,
+Rangers FC , Scottland , 1 ,
+BSC Young Boys , Switzerland , 1 ,
+RB Salzburgo , Austria , 1 ,
+Club Brujas , Belgium , 1 ,
+Dinamo Zagreb , Croatia , 1 ,
+Olympiakos , Greeece , 1 ,
+Estrella Roja , Slovenia , 1 ,

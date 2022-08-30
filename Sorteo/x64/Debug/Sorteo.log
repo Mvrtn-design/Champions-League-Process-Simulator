@@ -1,0 +1,6 @@
+﻿  Almacen.cpp
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(110,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(125,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(202,28): warning C4101: 'posicion': variable local sin referencia
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(277,10): warning C4101: 'clasi': variable local sin referencia
+  Sorteo.vcxproj -> C:\Users\marti\Documents\Proyecyo de C++\Sorteo\x64\Debug\Sorteo.exe
