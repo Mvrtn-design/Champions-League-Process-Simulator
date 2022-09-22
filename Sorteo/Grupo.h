@@ -7,7 +7,7 @@ class Grupo
 public:
 	Grupo();
 	Grupo(char l, int Cantidad);
-	void meterEquipo(std::string _nombre, std::string _pais, int posicion);
+	void meterEquipo(std::string _nombre, std::string _pais, int posicion, int categoria);
 	void meterEquipo(Equipo* aux);
 	void mostrarGrupo();
 	void calendario(int jornada);

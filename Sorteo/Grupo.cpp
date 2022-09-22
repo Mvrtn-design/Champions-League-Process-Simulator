@@ -17,9 +17,9 @@ Grupo::Grupo(char l, int Cantidad) {
 	this->integrante = new Equipo[cantidad];
 
 }
-void Grupo::meterEquipo(std::string _nombre, std::string _pais, int posicion) {
+void Grupo::meterEquipo(std::string _nombre, std::string _pais, int posicion, int categoria) {
 	if (contador <= cantidad) {
-		Equipo  aux = Equipo(_nombre, _pais, posicion);
+		Equipo  aux = Equipo(_nombre, _pais, posicion,categoria);
 		integrante[contador] = aux;
 		contador++;
 	}

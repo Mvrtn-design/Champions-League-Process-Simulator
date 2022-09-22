@@ -34,27 +34,31 @@ int main() {
 	fstream archivo("./TextoEquipos.txt");
 
 	Almacen sistema = Almacen();
-	string word, nombre, pais, posicion;
+	string word, nombre, pais, posicion,categoria;
 
 
 	int i = 0;
 	while (archivo >> word) {
 		if (word != ",") {
-			if (i % 3 == 0) {
+			if (i % 4 == 0) {
 				nombre += word;
 				nombre += " ";
 			}
-			else if (i % 3 == 1) {
+			else if (i % 4 == 1) {
 				pais += word;
 				pais += " ";
 			}
-			else if (i % 3 == 2) {
+			else if (i % 4 == 2) {
 				posicion = word;
-				sistema.meterEquipo(nombre, pais,stoi(posicion));
+			}
+			else if (i % 4 == 3) {
+				categoria = word;
+				sistema.meterEquipo(nombre, pais,stoi(posicion),stoi(categoria));
 				
 				nombre.erase();
 				pais.erase();
-				posicion.erase();				
+				posicion.erase();
+				categoria.erase();
 			}
 		}
 		else {
@@ -63,13 +67,14 @@ int main() {
 		}
 	}
 	archivo.close();
-
-	sistema.asignacionBombos();
-	sistema.mostrarBombos();
+	cin.ignore();
 	sistema.asignacionBombos();
 	cin.ignore();
+	sistema.mostrarBombos();
+	cin.ignore();	
 	sistema.realizarSorteo();	
 	cin.ignore();
 	sistema.realizarFaseGrupos();
+	cin.ignore();
 	sistema.realizarSorteoFaseFinal();
 }

@@ -15,6 +15,25 @@ Partido::Partido(Equipo* l, Equipo* v) {
 	golesLocal = rand() % 4;
 	golesVisitante = rand() % 4;
 
+	int comodin = rand() % 4;
+	int comodin2 = rand() % 4;
+
+	int diferencia = l->getCategoria() - v->getCategoria();
+	if (diferencia == -1) {
+		if (comodin > golesLocal) golesLocal = comodin;
+	}
+	else if (diferencia == 1) {
+		if (comodin > golesVisitante) golesVisitante = comodin;
+	}
+	else if (diferencia < -1) {
+		if (comodin > golesLocal) golesLocal = comodin;
+		if (comodin2 < golesVisitante) golesVisitante = comodin2;
+	}
+	else if (diferencia > 1) {
+		if (comodin > golesVisitante) golesVisitante = comodin;
+		if (comodin2 < golesLocal) golesLocal = comodin2;
+	}
+
 	cout << l->getNombre() << " " << golesLocal << "-" << golesVisitante << " " << v->getNombre() << endl;
 
 	actualizarDatos(l, v);
@@ -100,7 +119,7 @@ Equipo* Partido::partidoEliminatoria(Equipo* l, Equipo* v) {
 		gv += pv;
 		gl += pl;
 
-		cout << "PRÓRROGA: " << pl << "-" << pv << endl;
+		cout << "PRORROGA: " << pl << "-" << pv << endl;
 		if (gl > gv) {
 
 			ganador = l;

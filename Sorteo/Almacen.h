@@ -9,7 +9,7 @@ class Almacen
 public:
 	Almacen();
 	Equipo getEquipo(int Equipo);
-	void meterEquipo(std::string _nombre, std::string _pais, int posicion);
+	void meterEquipo(std::string _nombre, std::string _pais, int posicion, int categoria);
 	void mostrarAlmacen();
 	void asignacionBombos();
 	void meterManualmente();

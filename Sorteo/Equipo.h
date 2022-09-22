@@ -13,9 +13,10 @@ private:
 	int puntos;
 	int goles;
 	int golesEncajados;
+	int categoria;
 	
 public:
-	Equipo(std::string, std::string, int posicion);
+	Equipo(std::string, std::string, int posicion, int categoria);
 	Equipo();
 	~Equipo();
 	int getVictorias();
@@ -23,6 +24,7 @@ public:
 	int getDerrotas();
 	int getPuntos();
 	int getGoles();
+	int getCategoria();
 	int getGolesEncajados();
 	bool getEncuadrado();
 	void setEncuadrado(bool opcion);

@@ -29,8 +29,8 @@ Almacen::Almacen() {
 		Grupos[i] = Grupo(letra, 4);
 	}
 }
-void Almacen::meterEquipo(std::string _nombre, std::string _pais, int posicion) {
-	Clubes[cantidad] = Equipo(_nombre, _pais, posicion);
+void Almacen::meterEquipo(std::string _nombre, std::string _pais, int posicion, int categoria) {
+	Clubes[cantidad] = Equipo(_nombre, _pais, posicion, categoria);
 	cantidad++;
 	cout << "Equipo metido: " << Clubes[cantidad - 1].getNombre() << endl;
 }
@@ -93,11 +93,13 @@ void Almacen::meterManualmente()
 {
 	std::string nombre;
 	std::string pais;
-	int posicion;
+	int posicion,categoria;
 	cout << "\nIntroduzca nombre del club: "; cin >> nombre;
 	cout << "\nIntroduzca su pais (en ingles): ";	cin >> pais;
 	cout << "\nIntroduzca la posicion ocupada en su respectiva liga: ";	cin >> posicion;
-	meterEquipo(nombre, pais, posicion);
+
+	cout << "\nIntroduzca la categoria a nivel continental del equipo: ";	cin >> categoria;
+	meterEquipo(nombre, pais, posicion,categoria);
 }
 
 void Almacen::mostrarBombos()
@@ -207,6 +209,7 @@ void Almacen::realizarSorteoFaseFinal() {
 		cout << "- " << Grupos[i].getEquipo(0)->getNombre() << endl;
 		cout << "- " << Grupos[i].getEquipo(1)->getNombre() << endl;
 	}
+	cin.ignore();
 
 	for (i = 0; i < 8; i++) {
 		if (i % 4 == 0) {
@@ -256,12 +259,12 @@ void Almacen::realizarFaseGrupos()
 		{
 			Grupos[j].calendario(i);
 		}
-		//cin.ignore();
+		cin.ignore();
 		for (j = 0; j < 8; j++)
 		{
 			Grupos[j].mostrarGrupo();
 		}
-		//cin.ignore();
+		cin.ignore();
 	}
 }
 
@@ -296,6 +299,7 @@ void Almacen::realizarFaseFinal(int num)
 	for (i = 0; i < num; i = i + 2) {
 		cout << Bombo[5].getEquipo(i)->getNombre() << "\t-\t" << Bombo[5].getEquipo(i + 1)->getNombre() << endl;
 	}
+	cin.ignore();
 
 	for (i = 0; i < num; i = i + 2) {
 		std::this_thread::sleep_for(std::chrono::seconds(1));

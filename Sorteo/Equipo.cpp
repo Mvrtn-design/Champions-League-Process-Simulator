@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Equipo::Equipo(std::string _nombre, std::string _pais, int _posicion) {
+Equipo::Equipo(std::string _nombre, std::string _pais, int _posicion, int ctegoria) {
 	posicionLiga = _posicion;
 	goles = 0;
 	golesEncajados = 0;
@@ -16,6 +16,8 @@ Equipo::Equipo(std::string _nombre, std::string _pais, int _posicion) {
 	nombre = _nombre;
 	pais = _pais;
 	encuadrado = false;
+	categoria = ctegoria;
+
 }
 Equipo::Equipo() {
 	nombre = "Sin nombre";
@@ -74,6 +76,10 @@ Equipo Equipo::getEquipo()
 }
 int Equipo::getGoles() {
 	return goles;
+}
+int Equipo::getCategoria()
+{
+	return categoria;
 }
 int Equipo::getGolesEncajados()
 {

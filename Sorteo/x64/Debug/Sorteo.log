@@ -1,6 +1,13 @@
 ﻿  Almacen.cpp
-C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(110,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(125,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(202,28): warning C4101: 'posicion': variable local sin referencia
-C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(277,10): warning C4101: 'clasi': variable local sin referencia
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(108,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(123,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(200,28): warning C4101: 'posicion': variable local sin referencia
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Almacen.cpp(275,10): warning C4101: 'clasi': variable local sin referencia
+  Grupo.cpp
+  main.cpp
+  Partido.cpp
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Partido.cpp(12,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Partido.cpp(90,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Generando código...
+C:\Users\marti\Documents\Proyecyo de C++\Sorteo\Grupo.cpp(123): warning C4715: 'Grupo::getEquipo': no todas las rutas de acceso de control devuelven un valor
   Sorteo.vcxproj -> C:\Users\marti\Documents\Proyecyo de C++\Sorteo\x64\Debug\Sorteo.exe
